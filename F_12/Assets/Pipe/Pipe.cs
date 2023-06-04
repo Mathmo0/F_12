@@ -4,13 +4,29 @@ using UnityEngine;
 
 public class Pipe : MonoBehaviour
 {
-    public float curveRadius, pipeRadius;   
-    public int curveSegmentCount //number of segments main curve
-        , pipeSegmentCount; //number of segments per segment of main curve
+    public float pipeRadius;
+    public int pipeSegmentCount;
     
+    public int curveSegmentCount; //number of segments main curve
+    
+    public float CurveRadius {
+        get {
+            return curveRadius;
+        }
+    }
+    public float curveRadius; //number of segments per segment of main curve
+    
+    public float CurveAngle {
+        get {
+            return curveAngle;
+        }
+    }
     private float curveAngle; //angle of main curve
     
     public float ringDistance; //distance between rings
+    
+    public float minCurveRadius, maxCurveRadius;
+    public int minCurveSegmentCount, maxCurveSegmentCount;
     
     private Mesh mesh;
     private Vector3[] vertices;
@@ -44,6 +60,10 @@ public class Pipe : MonoBehaviour
     {
         GetComponent<MeshFilter>().mesh = mesh = new Mesh();
         mesh.name = "Pipe";
+        
+        curveRadius = Random.Range(minCurveRadius, maxCurveRadius);
+        curveSegmentCount = Random.Range(minCurveSegmentCount, maxCurveSegmentCount + 1);
+        
         SetVertices();
         SetTriangles();
         mesh.RecalculateNormals();

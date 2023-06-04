@@ -365,6 +365,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4960055515041301506, guid: b19054d8d726e0e40953106b5596619b, type: 3}
+      propertyPath: maxCurveRadius
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960055515041301506, guid: b19054d8d726e0e40953106b5596619b, type: 3}
+      propertyPath: minCurveRadius
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960055515041301506, guid: b19054d8d726e0e40953106b5596619b, type: 3}
+      propertyPath: pipeSegmentCount
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960055515041301506, guid: b19054d8d726e0e40953106b5596619b, type: 3}
+      propertyPath: curveSegmentCount
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960055515041301506, guid: b19054d8d726e0e40953106b5596619b, type: 3}
+      propertyPath: maxCurveSegmentCount
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4960055515041301506, guid: b19054d8d726e0e40953106b5596619b, type: 3}
+      propertyPath: minCurveSegmentCount
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4960055515041301507, guid: b19054d8d726e0e40953106b5596619b, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -415,3 +439,68 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b19054d8d726e0e40953106b5596619b, type: 3}
+--- !u!1001 &1851497621489266231
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 327150671832225348, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.138436
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.499735
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 10.124577
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1127742041515757511, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503953331309744027, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: velocity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3503953331309744027, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
+      propertyPath: pipeSystem
+      value: 
+      objectReference: {fileID: 1379784943}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79f9018ac09b68444b8dc9d69744a1c3, type: 3}
