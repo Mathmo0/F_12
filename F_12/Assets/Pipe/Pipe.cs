@@ -23,6 +23,15 @@ public class Pipe : MonoBehaviour
     }
     private float curveAngle; //angle of main curve
     
+    
+	
+    public float RelativeRotation {
+        get {
+            return relativeRotation;
+        }
+    }
+    private float relativeRotation; // Remember his position
+    
     public float ringDistance; //distance between rings
     
     public float minCurveRadius, maxCurveRadius;
@@ -45,7 +54,7 @@ public class Pipe : MonoBehaviour
     }
     
     public void AlignWith (Pipe pipe) {
-        float relativeRotation = Random.Range(0, curveSegmentCount) * 360f / pipeSegmentCount;
+        relativeRotation = Random.Range(0, curveSegmentCount) * 360f / pipeSegmentCount;
         
         transform.SetParent(pipe.transform, false);
         transform.localPosition = Vector3.zero; //set position to 0,0,0
@@ -54,21 +63,32 @@ public class Pipe : MonoBehaviour
         transform.Rotate(relativeRotation, 0f, 0f); //rotate randomly
         transform.Translate(0f, -curveRadius, 0f); //move to start of pipe
         transform.SetParent(pipe.transform.parent);
+        transform.localScale = Vector3.one;
     }
     
     private void Awake () 
     {
         GetComponent<MeshFilter>().mesh = mesh = new Mesh();
         mesh.name = "Pipe";
-        
+    }
+
+    public void Generate()
+    {
         curveRadius = Random.Range(minCurveRadius, maxCurveRadius);
         curveSegmentCount = Random.Range(minCurveSegmentCount, maxCurveSegmentCount + 1);
-        
+        mesh.Clear();
         SetVertices();
         SetTriangles();
         mesh.RecalculateNormals();
+        
+        /*Vector3[] normals = mesh.normals;
+        for (int i = 0; i < normals.Length; i++)
+        {
+            normals[i] = -normals[i];
+        }
+        mesh.normals = normals;*/
     }
-
+    
     private void SetVertices()
     {
         vertices = new Vector3[pipeSegmentCount * curveSegmentCount * 4];

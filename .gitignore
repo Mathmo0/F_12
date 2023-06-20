@@ -70,3 +70,13 @@ F_12/Library/
 F_12/ProjectSettings/
 
 F_12/Packages/
+
+F_12/obj/Debug/
+
+*.xml
+
+*.meta
+
+F_12/Assets/Alvios/
+
+F_12/Assets/3Skyboxes/
