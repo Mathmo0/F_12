@@ -23,6 +23,41 @@ public class PipeSystem : MonoBehaviour
         AlignNextPipeWithOrigin();
     }
     
+    private Vector3 CalculateColliderPosition(float curveRadius, float curveAngle, float pipeRadius)
+    {
+        // Calculer la position du collider en utilisant les paramètres de positionnement du tube
+        /*float colliderY = curveRadius + pipeRadius;
+        Vector3 colliderPosition = new Vector3(0f, colliderY, 0f);
+
+        return colliderPosition;*/
+        // Calculer la position du collider en utilisant les paramètres de positionnement du tube
+        float colliderY = curveRadius + pipeRadius;
+        float colliderX = Mathf.Cos(curveAngle * Mathf.Deg2Rad) * (curveRadius + pipeRadius);
+        float colliderZ = Mathf.Sin(curveAngle * Mathf.Deg2Rad) * (curveRadius + pipeRadius);
+        Vector3 colliderPosition = new Vector3(colliderX, colliderY, colliderZ);
+
+        return colliderPosition;
+    }
+    
+    private Vector3 CalculateColliderSize(Vector3[] vertices)
+    {
+        // Calculer la taille du collider en utilisant les vertices du tube généré
+        Vector3 minVertex = vertices[0];
+        Vector3 maxVertex = vertices[0];
+
+        // Trouver les coordonnées minimales et maximales parmi les vertices
+        for (int i = 1; i < vertices.Length; i++)
+        {
+            minVertex = Vector3.Min(minVertex, vertices[i]);
+            maxVertex = Vector3.Max(maxVertex, vertices[i]);
+        }
+
+        // Calculer la taille en utilisant les différences entre les coordonnées minimales et maximales
+        Vector3 size = maxVertex - minVertex;
+
+        return size;
+    }
+    
     public Pipe SetupFirstPipe () {
         transform.localPosition = new Vector3(0f, -pipes[1].CurveRadius);
         return pipes[1];
