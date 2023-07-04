@@ -47,14 +47,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pipeRadius: 1
-  pipeSegmentCount: 10
+  pipeSegmentCount: 5
   curveSegmentCount: 20
   curveRadius: 4
   ringDistance: 1
   minCurveRadius: 4
   maxCurveRadius: 10
   minCurveSegmentCount: 4
-  maxCurveSegmentCount: 20
+  maxCurveSegmentCount: 10
 --- !u!33 &4960055515041301505
 MeshFilter:
   m_ObjectHideFlags: 0

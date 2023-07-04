@@ -41,18 +41,6 @@ public class Pipe : MonoBehaviour
     private Vector3[] vertices;
     private int[] triangles;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
     public void AlignWith (Pipe pipe) {
         relativeRotation = Random.Range(0, curveSegmentCount) * 360f / pipeSegmentCount;
         
@@ -80,13 +68,6 @@ public class Pipe : MonoBehaviour
         SetVertices();
         SetTriangles();
         mesh.RecalculateNormals();
-        
-        /*Vector3[] normals = mesh.normals;
-        for (int i = 0; i < normals.Length; i++)
-        {
-            normals[i] = -normals[i];
-        }
-        mesh.normals = normals;*/
     }
     
     private void SetVertices()
