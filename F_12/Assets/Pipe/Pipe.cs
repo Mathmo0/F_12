@@ -41,7 +41,7 @@ public class Pipe : MonoBehaviour
     private Vector3[] vertices;
     private int[] triangles;
     private BoxCollider collider;
-
+    private Vector2[] uv;
 
     public void AlignWith (Pipe pipe) {
         relativeRotation = Random.Range(0, curveSegmentCount) * 360f / pipeSegmentCount;
@@ -76,13 +76,24 @@ public class Pipe : MonoBehaviour
 
     public void Generate()
     {
-        
         curveRadius = Random.Range(minCurveRadius, maxCurveRadius);
         curveSegmentCount = Random.Range(minCurveSegmentCount, maxCurveSegmentCount + 1);
         mesh.Clear();
         SetVertices();
+        SetUV();
         SetTriangles();
         mesh.RecalculateNormals();
+    }
+    
+    private void SetUV () {
+        uv = new Vector2[vertices.Length];
+        for (int i = 0; i < vertices.Length; i+= 4) {
+            uv[i] = Vector2.zero;
+            uv[i + 1] = Vector2.right;
+            uv[i + 2] = Vector2.up;
+            uv[i + 3] = Vector2.one;
+        }
+        mesh.uv = uv;
     }
     
     private void SetVertices()
@@ -174,8 +185,8 @@ public class Pipe : MonoBehaviour
         triangles = new int[pipeSegmentCount * curveSegmentCount * 6];
         for (int t = 0, i = 0; t < triangles.Length; t += 6, i += 4) {
             triangles[t] = i;
-            triangles[t + 1] = triangles[t + 4] = i + 1;
-            triangles[t + 2] = triangles[t + 3] = i + 2;
+            triangles[t + 1] = triangles[t + 4] = i + 1; // i + 2 for inside
+            triangles[t + 2] = triangles[t + 3] = i + 2; // i + 1 for inside
             triangles[t + 5] = i + 3;
         }
         mesh.triangles = triangles;

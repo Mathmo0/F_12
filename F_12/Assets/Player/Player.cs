@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -19,6 +20,8 @@ public class Player : MonoBehaviour
     private float worldRotation, avatarRotation;
 
     public float rotationVelocity;
+
+    private bool turning, isTurningRight, isTurningLeft;
     
     // Start is called before the first frame update
     void Start()
@@ -32,6 +35,25 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.D))
+        {
+            turning = true;
+            isTurningRight = true;
+            isTurningLeft = false;
+        }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            turning = true;
+            isTurningRight = false;
+            isTurningLeft = true;
+        }
+        else
+        {
+            turning = false;
+            isTurningRight = false;
+            isTurningLeft = false;
+        }
+        
         float delta = velocity * Time.deltaTime;
         distanceTraveled += delta;
         systemRotation += delta * deltaToRotation;
@@ -71,5 +93,25 @@ public class Player : MonoBehaviour
             avatarRotation -= 360f;
         }
         rotater.localRotation = Quaternion.Euler(avatarRotation, 0f, 0f);
+        //rotater.GetChild(0).GetChild(0).localRotation = Quaternion.Euler(0f, 0f, 0f);
+    }
+
+    private void FixedUpdate()
+    {
+        if (turning)
+        {
+            if (isTurningRight)
+            {
+                rotater.GetChild(0).GetChild(0).localRotation = Quaternion.Euler(20f, 80f, 20f);
+            }
+            else if (isTurningLeft)
+            {
+                rotater.GetChild(0).GetChild(0).localRotation = Quaternion.Euler(20f, 110f, -20f);
+            }
+        }
+        else
+        {
+            rotater.GetChild(0).GetChild(0).localRotation = Quaternion.Euler(0f, 90f, 0f);
+        }
     }
 }
