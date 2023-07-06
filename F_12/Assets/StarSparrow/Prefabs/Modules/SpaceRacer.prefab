@@ -1,0 +1,364 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2502122946411723481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 485282886662016461}
+  m_Layer: 0
+  m_Name: SpaceRacer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &485282886662016461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2502122946411723481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4517931038648119406}
+  - {fileID: 3375463067104164691}
+  - {fileID: 5741784747511657841}
+  - {fileID: 7714657736568458655}
+  - {fileID: 2893097245036140226}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &894197283459423063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 485282886662016461}
+    m_Modifications:
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.62198
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.809017
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.58778524
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 72
+      objectReference: {fileID: 0}
+    - target: {fileID: 7454450903957709816, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+      propertyPath: m_Name
+      value: StarSparrow_Wing_1_Mirrored
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+--- !u!4 &7714657736568458655 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7450972380993033928, guid: c6b3f5b24fac195409550702e5daa40f, type: 3}
+  m_PrefabInstance: {fileID: 894197283459423063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2897860329832949324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 485282886662016461}
+    m_Modifications:
+    - target: {fileID: 1601426786796990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_Name
+      value: StarSparrow_Wing_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.62198
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.67
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.809017
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.58778524
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -72
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+--- !u!4 &2893097245036140226 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4815862664654990, guid: b30ca3097cfd8de47aa1ba38578e0c30, type: 3}
+  m_PrefabInstance: {fileID: 2897860329832949324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4492892641304847806
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 485282886662016461}
+    m_Modifications:
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.17364825
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195215782194111219, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_Name
+      value: StarSparrow_Wing_2_Mirrored
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 68009645f1254634c872da28df04bab8, type: 3}
+--- !u!4 &3375463067104164691 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+  m_PrefabInstance: {fileID: 4492892641304847806}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4520900218498894896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 485282886662016461}
+    m_Modifications:
+    - target: {fileID: 1097765548769710, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_Name
+      value: StarSparrow_Core
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.4471
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.7267
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.68
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+--- !u!4 &4517931038648119406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4394320405331038, guid: 328366602c7f9ae4aa29ecb957c7731d, type: 3}
+  m_PrefabInstance: {fileID: 4520900218498894896}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6858719472793987996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 485282886662016461}
+    m_Modifications:
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9848078
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.17364816
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1195215782194111219, guid: 68009645f1254634c872da28df04bab8, type: 3}
+      propertyPath: m_Name
+      value: StarSparrow_Wing_2_Mirrored (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 68009645f1254634c872da28df04bab8, type: 3}
+--- !u!4 &5741784747511657841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1189508625928855277, guid: 68009645f1254634c872da28df04bab8, type: 3}
+  m_PrefabInstance: {fileID: 6858719472793987996}
+  m_PrefabAsset: {fileID: 0}
