@@ -47,15 +47,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28f530f750563947be6f834fb5f17e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipeRadius: 16.6
-  pipeSegmentCount: 40
-  curveSegmentCount: 20
-  curveRadius: 35
+  pipeRadius: 1
+  pipeSegmentCount: 17
+  curveSegmentCount: 17
+  curveRadius: 4
   ringDistance: 1
-  minCurveRadius: 35
-  maxCurveRadius: 45
-  minCurveSegmentCount: 20
-  maxCurveSegmentCount: 30
+  minCurveRadius: 4
+  maxCurveRadius: 20
+  minCurveSegmentCount: 4
+  maxCurveSegmentCount: 20
 --- !u!33 &4960055515041301505
 MeshFilter:
   m_ObjectHideFlags: 0
